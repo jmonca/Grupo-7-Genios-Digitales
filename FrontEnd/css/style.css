@@ -1,0 +1,341 @@
+* {
+margin: 0;
+padding: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body{
+    background-image: url(Imagen1.jpg);
+    background-repeat: no-repeat;
+    background-size: auto !important;
+    overflow-y: hidden;
+}  
+
+/*lista de menu*/
+
+.navegacion{
+    width: 90%;
+    margin: 30px;
+    padding: 0px;
+    border-radius: 20px;
+    border: 1px solid black;
+    
+    
+}
+.navegacion ul{
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+
+}
+.menu >li{
+    
+    display: inline-block;
+}
+.menu > li > a{
+display: block;
+padding: 15px 20px;
+color: black;
+font-family:  Georgia;
+text-decoration: none ;
+font-weight: bold;
+
+}
+.menu li a :hover{
+    color:#3498DB;
+  
+    
+    
+    
+}
+.submenu{
+    position: absolute;
+    width: 160px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: #87CEFA;
+    font-family:"Open sans";
+    text-decoration:#353535 ;
+    
+    
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*Pagina de Inicio*/
+
+.inicio h4 {
+   color: black;
+   text-align: center;
+   text-decoration: none;
+   font-size: 50px;
+   text-shadow: 7px 13px 37px #3498DB;
+
+}
+.from-inicio h4 {
+color: black;
+text-align: center;
+text-decoration: none;
+font-size: 10px;
+
+}
+#logo{
+width:100% !important;
+text-align: center !important;
+margin: 0px auto;
+}
+
+#title{
+text-align: center;
+font-size: 80px;
+font-weight: bold;
+border: 1px black;
+}
+#slogan{
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+border: 1px black;
+}
+
+.inicio{
+border-style: none;
+padding: 2em;
+margin: 10em auto;
+width: 800px;
+height: auto;
+background-color: white;
+}
+
+/*Registro de Mascota*/
+
+.general{
+border-style: none;
+padding: 2em;
+margin: 20em auto;
+width: 800px;
+height: 400px;
+background-size: auto !important;
+margin-top: 250px;
+
+}
+
+.register {
+    width: 400px;
+    height: 400px;
+    background: #D6EAF8;
+    position: relative;
+    top: -130px;
+    left: 200px;
+    padding: 30px; 
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 50px;
+    border: 2px solid #3498DB;
+    font-family: "calibri";
+    color: black;
+    z-index: 1;
+    box-shadow: 7px 13px 37px #3498DB;
+    
+}
+.register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.register .controls{
+   width: 100%;
+   background: white;
+   padding: 2px;
+   border-radius: 4px;
+   margin-bottom: 16px; 
+   border: 1px solid #87CEFA;
+   font-family: "calibri";
+   font-size: 18px;
+
+}
+.register p {
+color: black;
+text-align: center;
+text-decoration: none;
+}
+.register .botons{
+    width: 100%;
+    background: white;
+    border: 1px solid #3498DB;
+    text-align: center;
+    padding: 8px;
+    
+}
+.form-register{
+ width: 400px;
+ height: 350px;
+ background: white;
+ position: relative;
+ bottom: 510px;
+ left: -10px;
+ padding: 0px;
+ border: 2px solid #87CEFA;  
+ border-style: dashed;
+ font-weight: bold;
+ color: black;
+ background-image: url(images/perro.png);
+ background-repeat: no-repeat;
+ background-position: bottom;
+ box-shadow: 7px 13px 37px #3498DB ;
+
+ 
+ }
+ .form-register h4 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+ }
+.botoninicio .boton{
+background-color: #87CEFA; 
+border-radius: 20px;
+color: white;
+padding: 8px 32px;
+text-align: center;
+display: inline-block;
+font-size: 20px;
+box-shadow: 7px 13px 37px #3498DB;
+margin: 30px auto;
+margin-left: 100px;
+
+
+
+}
+
+/*Registro de Propietarios*/
+
+.registerPropietario{
+ width: 400px;
+ height: 350px;
+ background: white;
+ position: relative;
+ bottom: 510px;
+ left: -10px;
+ padding: 0px;
+ border: 2px solid #87CEFA;  
+ border-style: dashed;
+ font-weight: bold;
+ color: black;
+ background-image: url(propietarios.png);
+ background-repeat: no-repeat;
+ background-position: bottom;
+ box-shadow: 7px 13px 37px #3498DB ;
+ }
+ .registerPropietario h4 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+ }
+
+ /*Registro de Veterinario*/
+
+.registerVeterinario{
+ width: 400px;
+ height: 350px;
+ background: white;
+ position: relative;
+ bottom: 510px;
+ left: -10px;
+ padding: 0px;
+ border: 2px solid #87CEFA;  
+ border-style: dashed;
+ font-weight: bold;
+ color: black;
+ background-image: url(veterinario.png);
+ background-repeat: no-repeat;
+ background-position: bottom;
+ box-shadow: 7px 13px 37px #3498DB ;
+}
+ .registerVeterinario h4 {
+   font-size: 22px;
+   margin-bottom: 20px;
+   text-align: center;
+   font-size: 50px;
+   color: black;
+ }
+ 
+
+ /*Consulta de Mascota*/
+ .register select{
+    padding: 8px 133px;
+    border: 1px solid #3498DB;
+    color: black;
+    margin-bottom: 10px;
+    border-radius: 8px;
+ }
+   .botones .controls{
+    color: black;
+    background: white;
+    border: 1px solid #3498DB;
+    text-align: center;
+    padding: -20px 100px;
+    margin-top: 5px;
+    border-radius: 8px;
+    font-size: 14px;
+ }
+ .boton .botons {
+  color: black;
+  background: white;
+  border-radius: 8px;
+  padding: px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: px;
+ }
+ .register h3 {
+   font-size: 30px;
+   margin-bottom: 30px;
+   margin-top: 20px;
+ }
+   .tablas {
+    font-family:calibri ;
+    border-collapse: collapse;
+    width: 95%;
+    margin: 100px auto;
+    
+  }
+  
+  .tablas td,  th {
+    border: 1px solid #7a7979;
+    text-align:center;
+    padding: 8px; 
+    
+  }
+  
+ .tablas th{
+    background-color: #87CEFA;
+    
+    
+ }
+.tablas tr:hover {
+background-color: #c4e4f8;
+text-align:center;
+
+}   
+  .tb,h2{
+   color: #87CEFA;
+   text-align: center; 
+   margin: 100px auto;
+   font-size: 50px;
+   
+  }
